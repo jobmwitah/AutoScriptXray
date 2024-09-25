@@ -23,7 +23,7 @@ commonname=none
 email=none
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -161,9 +161,9 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/nginx.conf"
 rm /etc/nginx/conf.d/vps.conf
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/vps.conf"
 /etc/init.d/nginx restart
 
 mkdir /etc/systemd/system/nginx.service.d
@@ -174,13 +174,13 @@ service nginx restart
 cd
 mkdir /home/vps
 mkdir /home/vps/public_html
-wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/index"
-wget -O /home/vps/public_html/.htaccess "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/.htaccess"
+wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/index"
+wget -O /home/vps/public_html/.htaccess "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/.htaccess"
 mkdir /home/vps/public_html/ss-ws
 mkdir /home/vps/public_html/clash-ws
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -297,7 +297,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # // banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/banner/banner.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/banner/banner.conf"
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
@@ -321,43 +321,43 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/menu.sh"
-wget -O m-vmess "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-vmess.sh"
-wget -O m-vless "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-vless.sh"
-wget -O running "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/running.sh"
-wget -O clearcache "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/clearcache.sh"
-wget -O m-ssws "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-ssws.sh"
-wget -O m-trojan "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-trojan.sh"
+wget -O menu "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/menu.sh"
+wget -O m-vmess "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-vmess.sh"
+wget -O m-vless "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-vless.sh"
+wget -O running "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/running.sh"
+wget -O clearcache "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/clearcache.sh"
+wget -O m-ssws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-ssws.sh"
+wget -O m-trojan "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-trojan.sh"
 
 # menu ssh ovpn
-wget -O m-sshovpn "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-sshovpn.sh"
-wget -O usernew "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/trial.sh"
-wget -O renew "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/renew.sh"
-wget -O hapus "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cek.sh"
-wget -O member "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/tendang.sh"
-wget -O sshws "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/sshws.sh"
-wget -O user-lock "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/user-lock.sh"
-wget -O user-unlock "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/user-unlock.sh"
+wget -O m-sshovpn "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-sshovpn.sh"
+wget -O usernew "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/trial.sh"
+wget -O renew "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/renew.sh"
+wget -O hapus "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/hapus.sh"
+wget -O cek "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/cek.sh"
+wget -O member "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/member.sh"
+wget -O delete "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/delete.sh"
+wget -O autokill "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/tendang.sh"
+wget -O sshws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/sshws.sh"
+wget -O user-lock "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/user-unlock.sh"
 
 # menu system
-wget -O m-system "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-system.sh"
-wget -O m-domain "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/add-host.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/xray/certv2ray.sh"
-wget -O speedtest "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/speedtest_cli.py"
-wget -O auto-reboot "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/auto-reboot.sh"
-wget -O restart "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/bw.sh"
-wget -O m-tcp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/tcp.sh"
-wget -O xp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/xp.sh"
-wget -O sshws "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/sshws.sh"
-wget -O m-dns "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-dns.sh"
+wget -O m-system "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-system.sh"
+wget -O m-domain "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-domain.sh"
+wget -O add-host "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/add-host.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/certv2ray.sh"
+wget -O speedtest "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/speedtest_cli.py"
+wget -O auto-reboot "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/auto-reboot.sh"
+wget -O restart "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/restart.sh"
+wget -O bw "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/bw.sh"
+wget -O m-tcp "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/tcp.sh"
+wget -O xp "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/xp.sh"
+wget -O sshws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/ssh/sshws.sh"
+wget -O m-dns "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/menu/m-dns.sh"
 
 chmod +x menu
 chmod +x m-vmess

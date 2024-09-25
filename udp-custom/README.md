@@ -3,9 +3,9 @@
 - Upload : 3 Mbps
 - Download : 3 Mbps
 ```
-apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/udp.sh" && chmod +x udp.sh && ./udp.sh
+apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/udp-custom/udp.sh" && chmod +x udp.sh && ./udp.sh
 ```
 - NS Pointing
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/slowdns/nspointing.png)
+![Service Status](https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/udp-custom/slowdns/nspointing.png)
 
 

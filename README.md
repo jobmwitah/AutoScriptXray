@@ -24,7 +24,7 @@
 - (Recommendation) Ubuntu 18 / 20 LTS (STABLE to use)
 <br>
 
-# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) to display other settings
+# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/ItsMwitah/AutoScriptXray/tree/master/image) to display other settings
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
@@ -35,7 +35,7 @@
 <br>
 
 # Pointing
-![Pointing](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/pointing.png)
+![Pointing](https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/image/pointing.png)
 
 ## Service & Port:
 <br>
@@ -71,15 +71,15 @@
 - no auto backup? which... is permanently removed
 - Just accept the existing features / you can add them yourself manually
 - Additional Features (Optional) skipper (NOTE) install after [Step Install] is complete
-- Optional [install OpenVPN + Slowdns +](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
-- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
-- Optional [install Bot Telegram Xolpanel](https://github.com/givpn/AutoScriptXray/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
+- Optional [install OpenVPN + Slowdns +](https://github.com/ItsMwitah/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
+- Optional [install Panel Webmin + ADS Block](https://github.com/ItsMwitah/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
+- Optional [install Bot Telegram Xolpanel](https://github.com/ItsMwitah/AutoScriptXray/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
   
 # Menu
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
+![Service Status](https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/image/menu.png)
 
 # Service Status
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
+![Service Status](https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/image/service.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
@@ -97,7 +97,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 
 # Donate
 [![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-yellow)](https://paypal.me/givpn11)
-[![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg)
+[![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/image/qris-givpn.jpg)
 [![Bitcoin donate button](https://img.shields.io/badge/Donate-Bitcoin-orange)](https://www.blockchain.com/explorer/addresses/btc/3BE1deCJcuykuTHMzmrmNYgN51E24Hix8i)
 [![Ethereum donate button](https://img.shields.io/badge/Donate-Ethereum-blue)](https://www.blockchain.com/explorer/addresses/eth/0x3eb09df9a72e8e333e202116ff3eb348b3ebf554)
 # List Donate

@@ -5,7 +5,7 @@ NC='\e[0m'
 clear
 rm -rf /usr/bin/speedtest
 echo -e "\e[1;32m Start download speedtest.. \e[0m"
-wget -q -O /usr/bin/speedtest https://raw.githubusercontent.com/givpn/AutoScriptXray/master/fix/speedtest.sh
+wget -q -O /usr/bin/speedtest https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/fix/speedtest.sh
 chmod +x /usr/bin/speedtest
 clear
 echo -e "\e[1;32m Setup done Please wait.. \e[0m"
