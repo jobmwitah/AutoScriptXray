@@ -10,12 +10,12 @@ botak=$(cat /etc/xray/domain)
 echo "$botak" > /root/domain
 domain=$(cat /root/domain)
 sleep 0.5
-mkdir -p /etc/xray 
+mkdir -p /etc/xray
 echo -e "[ ${green}INFO${NC} ] Checking... "
 apt install iptables iptables-persistent -y
 sleep 0.5
 echo -e "[ ${green}INFO$NC ] Setting ntpdate"
-ntpdate pool.ntp.org 
+ntpdate pool.ntp.org
 timedatectl set-ntp true
 sleep 0.5
 echo -e "[ ${green}INFO$NC ] Enable chronyd"
@@ -32,7 +32,7 @@ chronyc sourcestats -v
 chronyc tracking -v
 echo -e "[ ${green}INFO$NC ] Setting dll"
 apt clean all && apt update
-apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
+apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y
 apt install socat cron bash-completion ntpdate -y
 ntpdate pool.ntp.org
 apt -y install chrony
@@ -107,7 +107,7 @@ cat > /etc/xray/config.json << END
           "decryption":"none",
             "clients": [
                {
-                 "id": "${uuid}"                 
+                 "id": "${uuid}"
 #vless
              }
           ]
@@ -144,7 +144,7 @@ cat > /etc/xray/config.json << END
       "port": "25432",
       "protocol": "trojan",
       "settings": {
-          "decryption":"none",		
+          "decryption":"none",
            "clients": [
               {
                  "password": "${uuid}"
@@ -180,7 +180,7 @@ cat > /etc/xray/config.json << END
                "path": "/ss-ws"
            }
         }
-     },	
+     },
       {
         "listen": "127.0.0.1",
      "port": "24456",
@@ -261,7 +261,7 @@ cat > /etc/xray/config.json << END
            "serviceName": "ss-grpc"
           }
        }
-    }	
+    }
   ],
   "outbounds": [
     {
@@ -378,7 +378,7 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
              listen 80;
              listen [::]:80;
              listen 443 ssl http2 reuseport;
-             listen [::]:443 http2 reuseport;	
+             listen [::]:443 http2 reuseport;
              server_name *.$domain;
              ssl_certificate /etc/xray/xray.crt;
              ssl_certificate_key /etc/xray/xray.key;
@@ -496,31 +496,31 @@ systemctl restart runn
 
 cd /usr/bin/
 # vmess
-wget -O add-ws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/add-ws.sh" && chmod +x add-ws
-wget -O trialvmess "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/trialvmess.sh" && chmod +x trialvmess
-wget -O renew-ws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/renew-ws.sh" && chmod +x renew-ws
-wget -O del-ws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/del-ws.sh" && chmod +x del-ws
-wget -O cek-ws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/cek-ws.sh" && chmod +x cek-ws
+wget -O add-ws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/add-ws.sh" && chmod +x add-ws
+wget -O trialvmess "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/trialvmess.sh" && chmod +x trialvmess
+wget -O renew-ws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/renew-ws.sh" && chmod +x renew-ws
+wget -O del-ws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/del-ws.sh" && chmod +x del-ws
+wget -O cek-ws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/cek-ws.sh" && chmod +x cek-ws
 
 # vless
-wget -O add-vless "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/add-vless.sh" && chmod +x add-vless
-wget -O trialvless "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/trialvless.sh" && chmod +x trialvless
-wget -O renew-vless "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/renew-vless.sh" && chmod +x renew-vless
-wget -O del-vless "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/del-vless.sh" && chmod +x del-vless
-wget -O cek-vless "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/cek-vless.sh" && chmod +x cek-vless
+wget -O add-vless "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/add-vless.sh" && chmod +x add-vless
+wget -O trialvless "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/trialvless.sh" && chmod +x trialvless
+wget -O renew-vless "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/renew-vless.sh" && chmod +x renew-vless
+wget -O del-vless "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/del-vless.sh" && chmod +x del-vless
+wget -O cek-vless "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/cek-vless.sh" && chmod +x cek-vless
 
 # trojan
-wget -O add-tr "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/add-tr.sh" && chmod +x add-tr
-wget -O trialtrojan "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/trialtrojan.sh" && chmod +x trialtrojan
-wget -O del-tr "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/del-tr.sh" && chmod +x del-tr
-wget -O renew-tr "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/renew-tr.sh" && chmod +x renew-tr
-wget -O cek-tr "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/cek-tr.sh" && chmod +x cek-tr
+wget -O add-tr "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/add-tr.sh" && chmod +x add-tr
+wget -O trialtrojan "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/trialtrojan.sh" && chmod +x trialtrojan
+wget -O del-tr "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/del-tr.sh" && chmod +x del-tr
+wget -O renew-tr "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/renew-tr.sh" && chmod +x renew-tr
+wget -O cek-tr "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/cek-tr.sh" && chmod +x cek-tr
 
 # shadowsocks
-wget -O add-ssws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/add-ssws.sh" && chmod +x add-ssws
-wget -O trialssws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/trialssws.sh" && chmod +x trialssws
-wget -O del-ssws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/del-ssws.sh" && chmod +x del-ssws
-wget -O renew-ssws "https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/xray/renew-ssws.sh" && chmod +x renew-ssws
+wget -O add-ssws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/add-ssws.sh" && chmod +x add-ssws
+wget -O trialssws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/trialssws.sh" && chmod +x trialssws
+wget -O del-ssws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/del-ssws.sh" && chmod +x del-ssws
+wget -O renew-ssws "https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/xray/renew-ssws.sh" && chmod +x renew-ssws
 
 
 sleep 0.5
@@ -528,9 +528,9 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"
 yellow "xray/Vless"
 
-mv /root/domain /etc/xray/ 
+mv /root/domain /etc/xray/
 if [ -f /root/scdomain ];then
 rm /root/scdomain > /dev/null 2>&1
 fi
 clear
-rm -f ins-xray.sh  
+rm -f ins-xray.sh

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8f1d98d-73c1-4ce3-8192-0c18787828ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banner/banner.conf" beforeDir="false" afterPath="$PROJECT_DIR$/banner/banner.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot telegram panel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/bot telegram panel/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/fix/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/speedtestfix.sh" beforeDir="false" afterPath="$PROJECT_DIR$/fix/speedtestfix.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc/xray.sh" beforeDir="false" afterPath="$PROJECT_DIR$/grpc/xray.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helium/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/helium/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helium/ins-helium.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helium/ins-helium.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/debian.md" beforeDir="false" afterPath="$PROJECT_DIR$/menu/debian.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/debian.sh" beforeDir="false" afterPath="$PROJECT_DIR$/menu/debian.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rootvps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rootvps.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssh/index" beforeDir="false" afterPath="$PROJECT_DIR$/ssh/index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssh/ssh-vpn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ssh/ssh-vpn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sshws/insshws.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sshws/insshws.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stempel/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/stempel/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ubuntu/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ubuntu/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp-custom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/udp-custom/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp-custom/openvpn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/udp-custom/openvpn/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp-custom/openvpn/openvpn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/udp-custom/openvpn/openvpn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp-custom/openvpn/vpn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/udp-custom/openvpn/vpn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udp-custom/udp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/udp-custom/udp.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xray/ins-xray.sh" beforeDir="false" afterPath="$PROJECT_DIR$/xray/ins-xray.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2q88oxb2UtgEhXdL59NRpFkrgdG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/jobmwitah/AutoScriptXray",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8f1d98d-73c1-4ce3-8192-0c18787828ee" name="Changes" comment="" />
+      <created>1734033024034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734033024034</updated>
+      <workItem from="1734033026457" duration="492000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

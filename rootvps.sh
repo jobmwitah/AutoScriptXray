@@ -8,7 +8,7 @@ BYellow='\e[1;33m'
 BBlue='\e[1;34m'
 BPurple='\e[1;35m'
 NC='\e[0m'
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/ItsMwitah/AutoScriptXray/master/sshd_config;
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/jobmwitah/AutoScriptXray/master/sshd_config;
 systemctl restart sshd;
 clear;
 read -p "Enter Password : " pass
@@ -29,4 +29,3 @@ read -n 1 -s -r -p "Press any key to reboot..."
 rm -rf rootvps.sh
 reboot
 fi
-
